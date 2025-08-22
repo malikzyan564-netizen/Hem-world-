@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Wallpaper App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    .wallpaper {
+      background: #fff;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .wallpaper img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #4CAF50;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Wallpaper Gallery</h1>
+  
+  <div class="gallery">
+    <!-- Wallpaper 1 -->
+    <div class="wallpaper">
+      <img src="https://via.placeholder.com/400x700" alt="Wallpaper 1">
+      <button onclick="setWallpaper('Wallpaper 1')">Set as Wallpaper</button>
+    </div>
+
+    <!-- Wallpaper 2 -->
+    <div class="wallpaper">
+      <img src="https://via.placeholder.com/400x700" alt="Wallpaper 2">
+      <button onclick="setWallpaper('Wallpaper 2')">Set as Wallpaper</button>
+    </div>
+
+    <!-- Wallpaper 3 -->
+    <div class="wallpaper">
+      <img src="https://via.placeholder.com/400x700" alt="Wallpaper 3">
+      <button onclick="setWallpaper('Wallpaper 3')">Set as Wallpaper</button>
+    </div>
+
+    <!-- Wallpaper 4 -->
+    <div class="wallpaper">
+      <img src="https://via.placeholder.com/400x700" alt="Wallpaper 4">
+      <button onclick="setWallpaper('Wallpaper 4')">Set as Wallpaper</button>
+    </div>
+
+    <!-- Wallpaper 5 -->
+    <div class="wallpaper">
+      <img src="https://via.placeholder.com/400x700" alt="Wallpaper 5">
+      <button onclick="setWallpaper('Wallpaper 5')">Set as Wallpaper</button>
+    </div>
+
+    <!-- Wallpaper 6 -->
+    <div class="wallpaper">
+      <img src="https://via.placeholder.com/400x700" alt="Wallpaper 6">
+      <button onclick="setWallpaper('Wallpaper 6')">Set as Wallpaper</button>
+    </div>
+  </div>
+
+  <script>
+    function setWallpaper(name) {
+      alert("Feature not supported in browser yet. You selected: " + name);
+    }
+  </script>
+</body>
+</html>
